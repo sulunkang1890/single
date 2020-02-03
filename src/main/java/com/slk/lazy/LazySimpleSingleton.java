@@ -9,6 +9,7 @@ public class LazySimpleSingleton {
     public  static LazySimpleSingleton getInstance(){
         synchronized(LazySimpleSingleton.class){
             if(lazySimpleSingleton==null){
+
                 lazySimpleSingleton=new LazySimpleSingleton();
             }
         }
